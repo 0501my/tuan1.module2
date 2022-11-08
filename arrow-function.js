@@ -20,6 +20,6 @@ let machiValue = inventory.filter((type )=>{
     return type.type === "machine"
     }
 )
-let totalMachineValue = machiValue.reduce((a,b)=> a+b.value,0
+let totalMachineValue = machiValue.reduce((previousValue,currentValue)=> previousValue + currentValue.value,0
 )
 console.log(totalMachineValue)
